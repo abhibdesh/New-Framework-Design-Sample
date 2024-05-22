@@ -1,0 +1,20 @@
+.CardsSection{
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-around;
+}
+
+.card{
+    height: 150px;
+    width: 290px;
+    padding: 5px;
+    background: #d9e5f5;
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
