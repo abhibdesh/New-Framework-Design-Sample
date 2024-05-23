@@ -1,31 +1,35 @@
 /* Basic styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Times New Roman", Times, serif !important;
     margin: 0;
     padding: 0;
 }
 
 /* Navbar styling */
-.navbar {
-    background-color: #013147;
-    color: #fff;
+.navbarx {
+    background: linear-gradient(45deg,#035e88,#013147);
+    box-shadow: rgba(1,49, 71, 0.30) 0px -23px 25px 0px inset, rgba(1,49, 71, 0.40)
+     0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+     rgba(1,49, 71, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 
+     0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(1,49, 71, 0.09) 0px 32px 16px;
+        color: #fff;
     padding: 10px 20px;
 }
 
-.navbar-container {
+.navbar-containerx {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around;      
     align-items: center;
 }
 
-.brand-logo {
+.brand-logox {
     font-size: 24px;
     text-decoration: none;
     color: white;
 }
 
 /* Nav menu styling */
-.nav-menu {
+.nav-menux {
     list-style: none;
     display: flex;
     gap: 2px;
@@ -33,12 +37,12 @@ body {
     padding: 0;
 }
 
-.nav-menu li a {
+.nav-menux li a {
     text-decoration: none;
     color: white;
     padding: 10px 15px;
 }
-.nav-menu li a:hover {
+.nav-menux li a:hover {
     background-color: aliceblue;
     color: #333;
     border-radius: 100px;
@@ -47,14 +51,16 @@ body {
 
 
 /* Dropdown menu styling */
-.dropdown {
+.dropdownx {
     position: relative;
 }
-
-.dropdown-menu {
+.margina{
+    margin-left: 5px;
+}
+.dropdown-menux {
     display: none;
     position: absolute;
-    background-color: #013147;
+    background: linear-gradient(45deg,#035e88,#013147);
     list-style: none;
     row-gap: 10px;
     padding: 5px;
@@ -62,25 +68,26 @@ body {
     top: 100%;
     left: 0;
     min-width: 150px;
+    z-index: 10;
 }
 
-.dropdown-menu li{
+.dropdown-menux li{
     padding: 10px 15px;
     white-space: nowrap;
 
 }
-.dropdown-menu li:hover{
+.dropdown-menux li:hover{
    background-color: aliceblue;
    border-radius: 100px;
    color: #013147;
 
 }
-.dropdown-menu li:hover a{
+.dropdown-menux li:hover a{
     color: #013147;
  }
 
 
-.dropdown:hover .dropdown-menu {
+.dropdownx:hover .dropdown-menux {
     display: block;
 }
 
