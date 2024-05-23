@@ -52,18 +52,7 @@ tbody tr:nth-child(odd) {
         border-radius: 10px;
     }
 
-  thead th:nth-child(1) {
-    width: 33%;
-  }
-  
-  thead th:nth-child(2) {
-    width: 33%;
-  }
-  
-  thead th:nth-child(3) {
-    width: 33%;
-  }
-  
+ 
   
   th,
   td {

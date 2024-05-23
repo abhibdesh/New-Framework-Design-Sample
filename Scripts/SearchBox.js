@@ -46,5 +46,38 @@ function ClearInput(){
 
 function ShowTable(){
     $("#table").show()
+    ChangeTable()
 
+}
+
+function ChangeTable(){
+   var columnNames = $("#ColumnNames").val()
+   if(columnNames == ['1','2','3']){
+    $("#TableSample1").show()
+    $("#TableSample2").hide()
+    $("#TableSample4").hide()
+    $("#TableSample3").hide()
+
+}
+   if(columnNames.includes('4') && !columnNames.includes('5')){
+        $("#TableSample1").hide()
+        $("#TableSample3").hide()
+        $("#TableSample4").hide()
+        $("#TableSample2").show()
+
+   }
+   if(columnNames.includes('5') && !columnNames.includes('4')){
+    $("#TableSample1").hide()
+    $("#TableSample2").hide()
+    $("#TableSample4").hide()
+    $("#TableSample3").show()
+
+}
+if(columnNames.includes('5') && columnNames.includes('4')){
+    $("#TableSample1").hide()
+    $("#TableSample2").hide()
+    $("#TableSample3").hide()
+    $("#TableSample4").show()
+
+}
 }
