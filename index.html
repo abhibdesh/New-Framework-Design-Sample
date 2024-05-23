@@ -23,14 +23,14 @@
     <!-- SHOULD BE COPY PASTED ON ALL PAGES  -->
     <nav class="navbarx">
         <div class="navbar-containerx">
-            <a href="Home" class="brand-logox">
+            <a href="index.html" class="brand-logox">
                 <img src="./Assets/Navbar/VUE_LOGO.png" height="50px" width="70px" />
             </a>
             <div class="menu-icon" id="menu-icon">
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-menux" id="nav-menu">
-                <li><a href="#">Member</a></li>
+                <li><a href="./Modules/Member/MemberList.html">Member</a></li>
                 <li><a href="#">Dispatch</a></li>
                 <li><a href="#">Legal</a></li>
                 <li><a href="#">Events</a></li>
@@ -219,17 +219,7 @@
 
                 <div class="row" id="table">
                     <div class="col">
-                        <b>Display Columns: </b>  
-                        
-                        <select  id="ColumnNames" multiple multiselect-hide-x="true">
-                            <option selected value="1">Name</option>
-                            <option selected value="2">SSN</option>
-                            <option selected value="3">Phone</option>
-                            <option value="4">Status</option>
-                            <option value="5">Email</option>
-                          </select>
-                          <button class="btn customButton" onclick="ChangeTable()"> Save</button>
-
+                       
                         <table id="TableSample1" style="margin-top: 20px;" class="text-center">
                             <thead>
                                 <tr >
@@ -268,162 +258,6 @@
                                 
                             </tbody> 
                         </table>
-
-                        <table id="TableSample2" style="margin-top: 20px;" class="text-center">
-                            <thead>
-                                <tr >
-                                    <th  scope="col">Name</th>
-                                    <th  scope="col">SSN</th>
-                                    <th  scope="col">Phone</th>
-                                    <th  scope="col">Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr></tr>
-                                <tr>
-                                    <td>John Doe</td>
-                                    <td>123-79-1231</td>
-                                    <td>(955) 099-5472</td>
-                                    <td>Active</td>
-                                </tr>
-                                <tr>
-                                    <td>Jason Desson</td>
-                                    <td>723-74-1531</td>
-                                    <td>(985) 293-5472</td>
-                                    <td>Active</td>
-
-                                </tr> 
-                                <tr>
-                                    <td>Stella Xavier</td>
-                                    <td>623-39-1439</td>
-                                    <td>(855) 099-5472</td>
-                                    <td>Inactive</td>
-
-                                </tr>
-                                <tr>
-                                    <td>Louisa Clark</td>
-                                    <td>723-79-4230</td>
-                                    <td>(595) 099-5491</td>
-                                    <td>Retired</td>
-
-                                </tr> 
-                                <tr>
-                                    <td>Juan Manuel</td>
-                                    <td>623-99-1202</td>
-                                    <td>(455) 139-5493</td>
-                                    <td>Deceased</td>
-
-                                </tr>
-                                
-                            </tbody> 
-                        </table>
-
-                        <table id="TableSample3" style="margin-top: 20px;" class="text-center">
-                            <thead>
-                                <tr >
-                                    <th  scope="col">Name</th>
-                                    <th  scope="col">SSN</th>
-                                    <th  scope="col">Phone</th>
-                                    <th  scope="col">Email</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr></tr>
-                                <tr>
-                                    <td>John Doe</td>
-                                    <td>123-79-1231</td>
-                                    <td>(955) 099-5472</td>
-                                    <td>abc@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td>Jason Desson</td>
-                                    <td>723-74-1531</td>
-                                    <td>(985) 293-5472</td>
-                                    <td>abc@gmail.com</td>
-
-                                </tr> 
-                                <tr>
-                                    <td>Stella Xavier</td>
-                                    <td>623-39-1439</td>
-                                    <td>(855) 099-5472</td>
-                                    <td>abc@gmail.com</td>
-
-                                </tr>
-                                <tr>
-                                    <td>Louisa Clark</td>
-                                    <td>723-79-4230</td>
-                                    <td>(595) 099-5491</td>
-                                    <td>abc@gmail.com</td>
-
-                                </tr> 
-                                <tr>
-                                    <td>Juan Manuel</td>
-                                    <td>623-99-1202</td>
-                                    <td>(455) 139-5493</td>
-                                    <td>abc@gmail.com</td>
-
-                                </tr>
-                                
-                            </tbody> 
-                        </table>
-
-                        <table id="TableSample4" style="margin-top: 20px;" class="text-center">
-                            <thead>
-                                <tr >
-                                    <th  scope="col">Name</th>
-                                    <th  scope="col">SSN</th>
-                                    <th  scope="col">Phone</th>
-                                    <th  scope="col">Status</th>
-                                    <th  scope="col">Email</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr></tr>
-                                <tr>
-                                    <td>John Doe</td>
-                                    <td>123-79-1231</td>
-                                    <td>(955) 099-5472</td>
-                                    <td>Active</td>
-                                    <td>abc@gmail.com</td>
-                                </tr>
-                                <tr>
-                                    <td>Jason Desson</td>
-                                    <td>723-74-1531</td>
-                                    <td>(985) 293-5472</td>
-                                    <td>Active</td>
-
-                                    <td>abc@gmail.com</td>
-
-                                </tr> 
-                                <tr>
-                                    <td>Stella Xavier</td>
-                                    <td>623-39-1439</td>
-                                    <td>(855) 099-5472</td>
-                                    <td>Inactive</td>
-
-                                    <td>abc@gmail.com</td>
-
-                                </tr>
-                                <tr>
-                                    <td>Louisa Clark</td>
-                                    <td>723-79-4230</td>
-                                    <td>(595) 099-5491</td>
-                                    <td>Retired</td>
-
-                                    <td>abc@gmail.com</td>
-
-                                </tr> 
-                                <tr>
-                                    <td>Juan Manuel</td>
-                                    <td>623-99-1202</td>
-                                    <td>(455) 139-5493</td>
-                                    <td>Deceased</td>
-                                    <td>abc@gmail.com</td>
-
-                                </tr>
-                                
-                            </tbody> 
-                        </table>
                     </div>
                 </div>
 
@@ -451,6 +285,34 @@
                         <tr>
                             <td>More than 7 days</td>
                             <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="row">&nbsp;</div>
+                <b>Events</b>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Event</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>03/06/2024</td>
+                            <td>Designs Presentation</td>
+                        </tr>
+                        <tr>
+                            <td>10/06/2024</td>
+                            <td>Union Meeting</td>
+                        </tr>
+                        <tr>
+                            <td>14/06/2024</td>
+                            <td>Weekly Meeting</td>
+                        </tr>
+                        <tr>
+                            <td>15/06/2024</td>
+                            <td>Monthly Meeting</td>
                         </tr>
                     </tbody>
                 </table>
