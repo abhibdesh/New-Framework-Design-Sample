@@ -10,6 +10,7 @@ $(document).ready(function() {
         $(this).parent().toggleClass('active');
     });
 });
-$("#UserImage").click(function() {
+
+function ToggleUser() {
     $(".UserMenu").slideToggle("Fast");
-});
+}

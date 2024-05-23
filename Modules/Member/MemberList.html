@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../CSS/PagesCommonCss.css">
     <link rel="icon" type="image/png" href="../../Assets/Navbar/VUE_LOGO.png" />
     <script src="../../Scripts/MemberSearch.js"></script>
+    <script src="../../Scripts/Navbar.js"></script>
     <script src="../../Scripts/multiselect-dropdown.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -98,8 +99,16 @@
                 </li>
             </ul>
             <div class="User">
-                <img src="../../Assets/Navbar/img_avatar2.png" class="UserImg">
+                <img id="UserImage" onclick="ToggleUser()" src="../../Assets/Navbar/img_avatar2.png" class="UserImg">
                 </img>
+            </div>
+            <div class="UserMenu">
+                Welcome Velarium Admin!
+                <ul>
+                    <li>My Profile</li>
+                    <li>Change Password</li>
+                    <li>Log Out</li>
+                </ul>
             </div>
 
         </div>
@@ -115,7 +124,9 @@
                     <div class="col"><b>Search Parameter</b></div>
                     <div class="col"><b>Filter</b></div>
                     <div class="col"><b> Search Value</b></div>
-                    <div class="col"></div>
+                    <div class="col">
+                        <button class="btn customButton" style="width: 200px;" onclick="NewMemberForm()"> Add New Memeber</button>
+                    </div>
                 </div>
                 <div class="row">&nbsp;</div>
                 <div class="row" id="NameSearch">
@@ -134,7 +145,6 @@
                         <input type="text" class="form-control search">
                     </div>
                     <div class="col">
-                        <button class="btn customButton" onclick="RemoveFilter(1)"> Remove Filter</button>
                     </div>
                 </div>
                 <div class="row">

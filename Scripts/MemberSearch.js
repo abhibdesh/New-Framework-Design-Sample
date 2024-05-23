@@ -90,3 +90,7 @@ if(columnNamess.includes('5') && columnNamess.includes('4')){
 function ToggleClass() {
     $(".OpenBulkActions").slideToggle("fast");
 }
+
+function NewMemberForm(){
+    window.location.href = './MemberForm.html'
+}
