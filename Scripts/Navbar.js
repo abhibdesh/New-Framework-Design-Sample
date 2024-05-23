@@ -1,4 +1,6 @@
 $(document).ready(function() {
+   
+
     $('#menu-icon').click(function() {
         $('#nav-menu').toggleClass('active');
     });
@@ -7,4 +9,7 @@ $(document).ready(function() {
         event.preventDefault();
         $(this).parent().toggleClass('active');
     });
+});
+$("#UserImage").click(function() {
+    $(".UserMenu").slideToggle("Fast");
 });
