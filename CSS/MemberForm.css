@@ -4,6 +4,42 @@
    
     overflow:hidden;
   }
+
+  tbody tr:nth-child(odd) {
+    background-color: #ebebeb;
+    color:#013147 !important ;
+    cursor: pointer;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #ffffff;
+    color:#013147 !important ;
+    cursor: pointer;
+  }
+  tbody tr:hover{
+    background-color: #c3ecff;
+  }
+  table {
+    background: linear-gradient(45deg,#035e88,#013147);
+   
+        color: #fff !important;  
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 10px;
+    }
+
+ .margin{
+    margin-left: 5px;
+    margin-right: 3px;
+ }
+  
+  th,
+  td {
+    padding: 5px;
+  }
+
+
   .tabs .tab-header {
     width:180px;
     height:100%;
@@ -28,6 +64,8 @@
     color: #fff !important;    
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
+    top: 141px;
+    margin-left: 10px;
   }
   .tabs .tab-header div i {
     display:inline-block;
@@ -43,12 +81,12 @@
   
   .tabs .tab-content > div {
     position:absolute;
-    padding:40px 20px;
     top:-200%;
     transition:all 500ms ease-in-out;
   }
   .tabs .tab-content > div.active {
-    top:100px;
+    top:141px;
+    margin-left: 10px;
   }
   .activex{
     background-color: #fff;
@@ -77,4 +115,32 @@
     font-size: x-large;
     font-weight: 800;
     margin-top: 50px;
+    z-index: 2;
+}
+.ProfilePic{
+    height: 150px;
+    width: 150px !important;
+    margin-bottom: 5px;
+}
+.marg{
+    margin-top: 150px !important;
+}
+.customButton{
+    background: linear-gradient(45deg,#035e88,#013147);
+    /* box-shadow: rgba(1,49, 71, 0.30) 0px -23px 25px 0px inset, rgba(1,49, 71, 0.40)
+     0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
+     rgba(1,49, 71, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 
+     0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(1,49, 71, 0.09) 0px 32px 16px; */
+        color: #fff !important;
+        border-radius: 10px;
+        margin: 10px;
+}
+.customButton:hover{
+    background: #013147 !important;
+}
+.tab-content .col-md-4{
+    margin-left: 10px;
+}
+.tab-content .col-md-3{
+    margin-left: 10px;
 }

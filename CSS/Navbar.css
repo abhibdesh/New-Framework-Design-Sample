@@ -13,6 +13,7 @@ body {
   height: 70px;
   position: fixed;
   top: 0px;
+  z-index: 3;
   width: 100%;
 }
 
@@ -145,20 +146,26 @@ body {
     width: 100%;
     padding-top: 10px;
     margin-top: 60px;
+    z-index: 3;
   }
 
   .nav-menux.active {
     display: flex;
     gap: 10px;
+    z-index: 3;
+
   }
 
   .dropdown-menux {
     position: static;
+    z-index: 3;
     transition: 0 0.5s ease-out;
 
   }
   .nav-menux li {
     padding: 5px;
+    z-index: 3;
+
   }
   .dropdownx:hover .dropdown-menux {
     display: none;
@@ -166,11 +173,15 @@ body {
 
   .dropdownx.active .dropdown-menux {
     display: block;
+    z-index: 3;
+
   }
   .navbar-containerx {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 3;
+
 }
 
 .logo{

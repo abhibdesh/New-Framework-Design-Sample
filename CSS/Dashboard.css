@@ -9,6 +9,10 @@ html{
     flex-direction: row;
     gap: 10px;
 }
+
+.margin{
+  margin: 5px;
+}
 .searchBox{
     width: 65%;
     height: fit-content;
