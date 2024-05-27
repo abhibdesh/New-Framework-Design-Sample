@@ -21,15 +21,16 @@
 <body>
 
     <!-- SHOULD BE COPY PASTED ON ALL PAGES  -->
-    <nav class="navbarx">
+    <nav class="navbarx fixed">
         <div class="navbar-containerx">
             <a href="index.html" class="brand-logox">
-                <img src="./Assets/Navbar/VUE_LOGO.png" height="50px" width="70px" />
+                <img class="logo" src="./Assets/Navbar/VUE_LOGO.png" height="50px" width="70px" />
             </a>
             <div class="menu-icon" onclick="ToggleMenu()" id="menu-icon">
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-menux" id="nav-menu">
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="./Modules/Member/MemberList.html">Member</a></li>
                 <li><a href="#">Dispatch</a></li>
                 <li><a href="#">Legal</a></li>
@@ -82,8 +83,8 @@
                         <li><a href="#">Password Policy</a></li>
                     </ul>
                 </li>
-            <li class="dropdownx">
-                    <a href="#" onclick="dropdownList()">Admin<i class="fa-solid fa-circle-chevron-down margina"></i> </a>
+            <li class="dropdownx" onclick="dropdownList()">
+                    <a href="#" >Admin<i class="fa-solid fa-circle-chevron-down margina"></i> </a>
                     <ul class="dropdown-menux">
                         <li><a href="#">Client Module</a></li>
                         <li><a href="#">Form Builder</a></li>
@@ -111,22 +112,31 @@
 
     <!-- DASHBOARD CARDS HERE -->
     <div class="CardsSection">
-        <div class="cardx">
-            <div class="pseudo"></div>
-            <div class="CardData">75</div>
-            <span class="CardLabel">Active Members</span>
-        </div>
-        <div class="cardx">
-            <div class="CardData">98</div>
-            <span class="CardLabel">Inactive Members</span>
-        </div>
-        <div class="cardx">
-            <div class="CardData">$(-3007.8)</div>
-            <span class="CardLabel">Total Credits</span>
-        </div>
-        <div class="cardx">
-            <div class="CardData">$4950</div>
-            <span class="CardLabel">Total Balance</span>
+        <div class="row">
+            <div class="col">
+                <div class="cardx">
+                    <div class="CardData">75</div>
+                    <span class="CardLabel">Active Members</span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cardx">
+                    <div class="CardData">98</div>
+                    <span class="CardLabel">Inactive Members</span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cardx">
+                    <div class="CardData">$(-3007.8)</div>
+                    <span class="CardLabel">Total Credits</span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cardx">
+                    <div class="CardData">$4950</div>
+                    <span class="CardLabel">Total Balance</span>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -137,194 +147,201 @@
 
     <div class="containerx">
         <div class="contentx">
-            <div class="searchBox">
-                <div class="row">
-                    <div class="col"><b>Search Parameter</b></div>
-                    <div class="col"><b>Filter</b></div>
-                    <div class="col"><b> Search Value</b></div>
-                    <div class="col"></div>
-                </div>
-                <div class="row">&nbsp;</div>
-                <div class="row" id="Row1">
-                    <div class="col"><select class="form-control">
-                        <option>First Name</option>
-                        <option>Last Name</option>
-                        <option>Status</option>
-                    </select></div>
-                    <div class="col"><select class="form-control">
-                        <option selected>Starts With</option>
-                        <option>Contains</option>
-                        <option >Is</option>
-                        <option >Is Not</option>
-                    </select></div>
-                    <div class="col">
-                        <input type="text" class="form-control search">
+            <div class="row">
+                <div class="col-md-8 col-sm-1">            
+                    <div class="searchBox">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-1"><b>Search Parameter</b></div>
+                        <div class="col-md-3 col-sm-1"><b>Filter</b></div>
+                        <div class="col-md-3 col-sm-1"><b> Search Value</b></div>
+                        <div class="col"></div>
                     </div>
-                    <div class="col">
-                        <button class="btn customButton" onclick="RemoveFilter(1)"> Remove Filter</button>
+                    <div class="row">&nbsp;</div>
+                    <div class="row" id="Row1">
+                        <div class="col-md-3 col-sm-1"><select class="form-control">
+                            <option>First Name</option>
+                            <option>Last Name</option>
+                            <option>Status</option>
+                        </select></div>
+                        <div class="col-md-3 col-sm-1"><select class="form-control">
+                            <option selected>Starts With</option>
+                            <option>Contains</option>
+                            <option >Is</option>
+                            <option >Is Not</option>
+                        </select></div>
+                        <div class="col-md-3 col-sm-1">
+                            <input type="text" class="form-control search">
+                        </div>
+                        <div class="col">
+                            <button class="btn customButton" onclick="RemoveFilter(1)"> Remove Filter</button>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    &nbsp;
-                </div>
-                <div class="row" id="Row2">
-                    <div class="col"><select class="form-control">
-                        <option>First Name</option>
-                        <option selected>Last Name</option>
-                        <option>Status</option>
-                    </select></div>
-                    <div class="col"><select class="form-control">
-                        <option>Starts With</option>
-                        <option selected>Contains</option>
-                        <option>Is</option>
-                        <option >Is Not</option>
-                    </select></div>
-                    <div class="col">
-                        <input type="text" class="form-control search">
+                    <div class="row">
+                        &nbsp;
                     </div>
-                    <div class="col">
-                        <button class="btn customButton" onclick="RemoveFilter(2)"> Remove Filter</button>
+                    <div class="row" id="Row2">
+                        <div class="col-md-3 col-sm-1"><select class="form-control">
+                            <option>First Name</option>
+                            <option selected>Last Name</option>
+                            <option>Status</option>
+                        </select></div>
+                        <div class="col-md-3 col-sm-1"><select class="form-control">
+                            <option>Starts With</option>
+                            <option selected>Contains</option>
+                            <option>Is</option>
+                            <option >Is Not</option>
+                        </select></div>
+                        <div class="col-md-3 col-sm-1">
+                            <input type="text" class="form-control search">
+                        </div>
+                        <div class="col">
+                            <button class="btn customButton" onclick="RemoveFilter(2)"> Remove Filter</button>
+                        </div>
                     </div>
-                </div>
-                <div class="row">&nbsp;</div>
-                <div class="row" id="Row3">
-                    <div class="col"><select class="form-control">
-                        <option>First Name</option>
-                        <option >Last Name</option>
-                        <option selected>Status</option>
-                    </select></div>
-                    <div class="col"><select class="form-control">
-                        <option>Starts With</option>
-                        <option >Contains</option>
-                        <option selected>Is</option>
-                        <option >Is Not</option>
-                    </select></div>
-                    <div class="col">
-                        <input type="text" class="form-control search">
+                    <div class="row">&nbsp;</div>
+                    <div class="row" id="Row3">
+                        <div class="col-md-3 col-sm-1"><select class="form-control">
+                            <option>First Name</option>
+                            <option >Last Name</option>
+                            <option selected>Status</option>
+                        </select></div>
+                        <div class="col-md-3 col-sm-1"><select class="form-control">
+                            <option>Starts With</option>
+                            <option >Contains</option>
+                            <option selected>Is</option>
+                            <option >Is Not</option>
+                        </select></div>
+                        <div class="col-md-3 col-sm-1">
+                            <input type="text" class="form-control search">
+                        </div>
+                        <div class="col-md-3 col-sm-1">
+                            <button class="btn customButton" onclick="RemoveFilter(3)"> Remove Filter</button>
+                        </div>
                     </div>
-                    <div class="col">
-                        <button class="btn customButton" onclick="RemoveFilter(3)"> Remove Filter</button>
+    
+                    <div class="row">&nbsp;</div>
+                    <div class="row">&nbsp;</div>
+    
+    
+                    <div class="row">
+                        <div class="col-md-4">
+                            <button class="btn customButton"> Save Filters</button>
+                        </div>
+                        <div class="col">
+                            <button class="btn customButton" onclick="ShowTable()"> Search</button>
+                            <button class="btn customButton" onclick="ShowNewRow()"> Add</button>
+                            <button class="btn btn-secondary" onclick="ClearInput()" style="width: 150px ;"> Clear</button>
+                        </div>
                     </div>
-                </div>
-
-                <div class="row">&nbsp;</div>
-                <div class="row">&nbsp;</div>
-
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <button class="btn customButton"> Save Filters</button>
+    
+                    <div class="row">&nbsp;</div>
+                    <div class="row">&nbsp;</div>
+    
+                    <div class="row" id="table">
+                        <div class="col">
+                           
+                            <table id="TableSample1" style="margin-top: 20px;" class="text-center">
+                                <thead>
+                                    <tr >
+                                        <th  scope="col">Name</th>
+                                        <th  scope="col">SSN</th>
+                                        <th  scope="col">Phone</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr></tr>
+                                    <tr>
+                                        <td>John Doe</td>
+                                        <td>123-79-1231</td>
+                                        <td>(955) 099-5472</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jason Desson</td>
+                                        <td>723-74-1531</td>
+                                        <td>(985) 293-5472</td>
+                                    </tr> 
+                                    <tr>
+                                        <td>Stella Xavier</td>
+                                        <td>623-39-1439</td>
+                                        <td>(855) 099-5472</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Louisa Clark</td>
+                                        <td>723-79-4230</td>
+                                        <td>(595) 099-5491</td>
+                                    </tr> 
+                                    <tr>
+                                        <td>Juan Manuel</td>
+                                        <td>623-99-1202</td>
+                                        <td>(455) 139-5493</td>
+                                    </tr>
+                                    
+                                </tbody> 
+                            </table>
+                        </div>
                     </div>
-                    <div class="col">
-                        <button class="btn customButton" onclick="ShowTable()"> Search</button>
-                        <button class="btn customButton" onclick="ShowNewRow()"> Add</button>
-                        <button class="btn btn-secondary" onclick="ClearInput()" style="width: 150px ;"> Clear</button>
-                    </div>
-                </div>
-
-                <div class="row">&nbsp;</div>
-                <div class="row">&nbsp;</div>
-
-                <div class="row" id="table">
-                    <div class="col">
-                       
-                        <table id="TableSample1" style="margin-top: 20px;" class="text-center">
+    
+    
+                </div></div>
+                <div class="col">
+                    <div class="Tasks">
+                        <b>Pending Tasks</b>
+                        <table>
                             <thead>
-                                <tr >
-                                    <th  scope="col">Name</th>
-                                    <th  scope="col">SSN</th>
-                                    <th  scope="col">Phone</th>
+                                <tr>
+                                    <th>Period</th>
+                                    <th>Count</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr></tr>
                                 <tr>
-                                    <td>John Doe</td>
-                                    <td>123-79-1231</td>
-                                    <td>(955) 099-5472</td>
+                                    <td>Upto 3 days</td>
+                                    <td>4</td>
                                 </tr>
                                 <tr>
-                                    <td>Jason Desson</td>
-                                    <td>723-74-1531</td>
-                                    <td>(985) 293-5472</td>
-                                </tr> 
-                                <tr>
-                                    <td>Stella Xavier</td>
-                                    <td>623-39-1439</td>
-                                    <td>(855) 099-5472</td>
+                                    <td>Upto 7 days</td>
+                                    <td>2</td>
                                 </tr>
                                 <tr>
-                                    <td>Louisa Clark</td>
-                                    <td>723-79-4230</td>
-                                    <td>(595) 099-5491</td>
-                                </tr> 
-                                <tr>
-                                    <td>Juan Manuel</td>
-                                    <td>623-99-1202</td>
-                                    <td>(455) 139-5493</td>
+                                    <td>More than 7 days</td>
+                                    <td>0</td>
                                 </tr>
-                                
-                            </tbody> 
+                            </tbody>
+                        </table>
+                        <div class="row">&nbsp;</div>
+                        <b>Events</b>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Event</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>03/06/2024</td>
+                                    <td>Designs Presentation</td>
+                                </tr>
+                                <tr>
+                                    <td>10/06/2024</td>
+                                    <td>Union Meeting</td>
+                                </tr>
+                                <tr>
+                                    <td>14/06/2024</td>
+                                    <td>Weekly Meeting</td>
+                                </tr>
+                                <tr>
+                                    <td>15/06/2024</td>
+                                    <td>Monthly Meeting</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
-
-
             </div>
+
            
-            <div class="Tasks">
-                <b>Pending Tasks</b>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Period</th>
-                            <th>Count</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Upto 3 days</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>Upto 7 days</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>More than 7 days</td>
-                            <td>0</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="row">&nbsp;</div>
-                <b>Events</b>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Event</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>03/06/2024</td>
-                            <td>Designs Presentation</td>
-                        </tr>
-                        <tr>
-                            <td>10/06/2024</td>
-                            <td>Union Meeting</td>
-                        </tr>
-                        <tr>
-                            <td>14/06/2024</td>
-                            <td>Weekly Meeting</td>
-                        </tr>
-                        <tr>
-                            <td>15/06/2024</td>
-                            <td>Monthly Meeting</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+
         </div>
         
     </div>

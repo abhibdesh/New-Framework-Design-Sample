@@ -24,7 +24,7 @@
   .tabs .tab-header > div.active {
     border: #013147 solid 1px;
     background: linear-gradient(45deg,#035e88,#013147);
-    color: #fff;    
+    color: #fff !important;    
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
   }
@@ -49,7 +49,16 @@
   .tabs .tab-content > div.active {
     top:100px;
   }
-  
+  .activex{
+    background-color: #fff;
+    color: #035e88 !important;
+    border-radius: 100px;
+}
+.activex a{
+    background-color: #fff;
+    color: #035e88 !important;
+    border-radius: 100px;
+}
   .tabs .tab-indicator {
     position:absolute;
     width:4px;

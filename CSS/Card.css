@@ -6,6 +6,14 @@
     gap: 5px;
     justify-content: space-around;
 }
+.col{
+    padding-bottom: 5px;
+}
+
+.CardsSection .col{
+    display: flex;
+    justify-content: center;
+}
 
 .cardx{
     height: 100px;
@@ -19,10 +27,10 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(45deg,#035e88,#013147);
-    box-shadow: rgba(1,49, 71, 0.30) 0px -23px 25px 0px inset, rgba(1,49, 71, 0.40)
+    /* box-shadow: rgba(1,49, 71, 0.30) 0px -23px 25px 0px inset, rgba(1,49, 71, 0.40)
      0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
      rgba(1,49, 71, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 
-     0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 10px 8px, rgba(1,49, 71, 0.09) 0px 20px 16px;
+     0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 10px 8px, rgba(1,49, 71, 0.09) 0px 20px 16px; */
     }
     .CardData{
         font-size: 35px;
@@ -36,5 +44,15 @@
 .cardx:hover{
     background: #013147;
     cursor: pointer;
+}
+
+
+@media screen and (min-width:320px){
+    .CardsSection{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+
+    }
 }
 
