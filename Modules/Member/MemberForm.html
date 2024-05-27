@@ -28,25 +28,24 @@
 <body>
 
     <!-- SHOULD BE COPY PASTED ON ALL PAGES  -->
-    <nav class="navbarx fixed sticky-top">
+    <nav class="navbarx fixed">
         <div class="navbar-containerx">
-            <a href="../../index.html" class="brand-logox">
-                <img src="../../Assets/Navbar/VUE_LOGO.png" height="50px" width="70px" />
+            <a href="index.html" class="brand-logox">
+                <img class="logo" src="../../Assets/Navbar/VUE_LOGO.png" height="50px" width="70px" />
             </a>
             <div class="menu-icon" onclick="ToggleMenu()" id="menu-icon">
-                <i class="fas fa-bars menuStyle"></i>
+                <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-menux" id="nav-menu">
-                <li><a href="../../index.html">Home</a></li>
-                <li class="activex"><a href="MemberList.html">Member</a></li>
+                <li><a class="active" href="../../index.html">Home</a></li>
+                <li><a href="../Member/MemberList.html">Member</a></li>
                 <li><a href="#">Dispatch</a></li>
                 <li><a href="#">Legal</a></li>
                 <li><a href="#">Events</a></li>
                 <li><a href="#">Tasks</a></li>
                 <li><a href="#">Class</a></li>
                 <li class="dropdownx">
-                    <a href="#" onclick="dropdownList()">Finance1 <i
-                            class="fa-solid fa-circle-chevron-down margina"></i> </a>
+                    <a href="#" onclick="dropdownList()">Finance1 <i class="fa-solid fa-circle-chevron-down margina"></i> </a>
                     <ul class="dropdown-menux">
                         <li><a href="#">Change File</a></li>
                         <li><a href="#">Change Rate Code</a></li>
@@ -57,8 +56,7 @@
                     </ul>
                 </li>
                 <li class="dropdownx">
-                    <a href="#" onclick="dropdownList()">Finance2 <i
-                            class="fa-solid fa-circle-chevron-down margina"></i></a>
+                    <a href="#" onclick="dropdownList()">Finance2 <i class="fa-solid fa-circle-chevron-down margina"></i></a>
                     <ul class="dropdown-menux">
                         <li><a href="#">Add Payment</a></li>
                         <li><a href="#">Add Fees</a></li>
@@ -74,8 +72,7 @@
                     </ul>
                 </li> -->
                 <li class="dropdownx">
-                    <a href="#" onclick="dropdownList()">Masters <i class="fa-solid fa-circle-chevron-down margina"></i>
-                    </a>
+                    <a href="#" onclick="dropdownList()">Masters <i class="fa-solid fa-circle-chevron-down margina"></i> </a>
                     <ul class="dropdown-menux">
                         <li><a href="#">Contractor</a></li>
                         <li><a href="#">Project</a></li>
@@ -85,8 +82,7 @@
                     </ul>
                 </li>
                 <li class="dropdownx">
-                    <a href="#" onclick="dropdownList()">Manage <i class="fa-solid fa-circle-chevron-down margina"></i>
-                    </a>
+                    <a href="#" onclick="dropdownList()">Manage <i class="fa-solid fa-circle-chevron-down margina"></i> </a>
                     <ul class="dropdown-menux">
                         <li><a href="#">Users</a></li>
                         <li><a href="#">Roles</a></li>
@@ -94,9 +90,8 @@
                         <li><a href="#">Password Policy</a></li>
                     </ul>
                 </li>
-                <li class="dropdownx">
-                    <a href="#" onclick="dropdownList()">Admin<i class="fa-solid fa-circle-chevron-down margina"></i>
-                    </a>
+            <li class="dropdownx" onclick="dropdownList()">
+                    <a href="#" >Admin<i class="fa-solid fa-circle-chevron-down margina"></i> </a>
                     <ul class="dropdown-menux">
                         <li><a href="#">Client Module</a></li>
                         <li><a href="#">Form Builder</a></li>
@@ -105,7 +100,7 @@
                     </ul>
                 </li>
             </ul>
-            <div class="User">
+            <div class="User">            
                 <img onclick="ToggleUser()" src="../../Assets/Navbar/img_avatar2.png" class="UserImg">
                 </img>
             </div>
@@ -117,7 +112,7 @@
                     <li>Log Out</li>
                 </ul>
             </div>
-
+            
         </div>
     </nav>
     <!-- NAVBAR SECTION ENDS HERE  -->
@@ -183,11 +178,9 @@
                     </div>
                 </div>
                 <div class="tab-content">
-                    <div class="tabb">
+                    <div class="tabb active">
                         <h2>Member</h2>
-                        <div class="row">
-                            oijhug
-                        </div>
+                        
                     </div>
 
                     <div>
@@ -319,6 +312,13 @@
                             vero ea perferendis consectetur veritatis.</p>
                     </div>
 
+                    <div class="tabb">
+                        <i class="fa fa-envelope"></i>
+                        <h2>This is order section</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis eum similique quisquam
+                            officiis neque, cumque dignissimos architecto nisi totam sapiente eos et illum laborum atque
+                            vero ea perferendis consectetur veritatis.</p>
+                    </div>
                     <div class="tabb">
                         <i class="fa fa-envelope"></i>
                         <h2>This is order section</h2>

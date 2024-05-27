@@ -26,18 +26,17 @@
 </head>
 
 <body>
-    <!-- SHOULD BE COPY PASTED ON ALL PAGES  -->
-    <nav class="navbarx">
+    <nav class="navbarx fixed">
         <div class="navbar-containerx">
             <a href="../../index.html" class="brand-logox">
-                <img src="../../Assets/Navbar/VUE_LOGO.png" height="50px" width="70px" />
+                <img class="logo" src="../../Assets/Navbar/VUE_LOGO.png" height="50px" width="70px" />
             </a>
             <div class="menu-icon" onclick="ToggleMenu()" id="menu-icon">
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-menux" id="nav-menu">
-                <li><a href="../../index.html">Home</a></li>
-                <li class="activex"><a href="MemberList.html">Member</a></li>
+                <li><a class="active" href="../../index.html">Home</a></li>
+                <li><a href="../Member/MemberList.html">Member</a></li>
                 <li><a href="#">Dispatch</a></li>
                 <li><a href="#">Legal</a></li>
                 <li><a href="#">Events</a></li>
@@ -65,11 +64,11 @@
                     </ul>
                 </li>
                 <!-- <li class="dropdown">
-                        <a href="#">Import/Export </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Demograhic Report</a></li>
-                        </ul>
-                    </li> -->
+                    <a href="#">Import/Export </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Demograhic Report</a></li>
+                    </ul>
+                </li> -->
                 <li class="dropdownx">
                     <a href="#" onclick="dropdownList()">Masters <i class="fa-solid fa-circle-chevron-down margina"></i> </a>
                     <ul class="dropdown-menux">
@@ -89,8 +88,8 @@
                         <li><a href="#">Password Policy</a></li>
                     </ul>
                 </li>
-                <li class="dropdownx">
-                    <a href="#" onclick="dropdownList()">Admin<i class="fa-solid fa-circle-chevron-down margina"></i> </a>
+            <li class="dropdownx" onclick="dropdownList()">
+                    <a href="#" >Admin<i class="fa-solid fa-circle-chevron-down margina"></i> </a>
                     <ul class="dropdown-menux">
                         <li><a href="#">Client Module</a></li>
                         <li><a href="#">Form Builder</a></li>
@@ -99,8 +98,8 @@
                     </ul>
                 </li>
             </ul>
-            <div class="User">
-                <img id="UserImage" onclick="ToggleUser()" src="../../Assets/Navbar/img_avatar2.png" class="UserImg">
+            <div class="User">            
+                <img onclick="ToggleUser()" src="../../Assets/Navbar/img_avatar2.png" class="UserImg">
                 </img>
             </div>
             <div class="UserMenu">
@@ -111,7 +110,7 @@
                     <li>Log Out</li>
                 </ul>
             </div>
-
+            
         </div>
     </nav>
     <!-- NAVBAR SECTION ENDS HERE  -->

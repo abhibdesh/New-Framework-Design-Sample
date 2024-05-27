@@ -11,6 +11,9 @@ body {
   color: #fff;
   padding: 10px 20px;
   height: 70px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
 }
 
 .navbar-containerx {
@@ -30,7 +33,7 @@ body {
   list-style: none;
   display: flex;
   gap: 2px;
-  z-index: 1;
+  z-index: 10;
   margin: 0;
 
   padding: 0;
