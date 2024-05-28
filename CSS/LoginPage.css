@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(45deg,#035e88,#013147);
+    background: #e9f0f7;
 
 }
 body{
@@ -15,7 +15,7 @@ body{
     flex-direction: row;
     border-radius: 10px;
     border: #8d8e8f solid 1px;
-    box-shadow: 0 40px 108px rgba(0, 0, 0, 0.9);
+    box-shadow: 0 40px 80px rgba(0, 0, 0, 0.4);
 }
 .border{
     border-radius: 10px;
