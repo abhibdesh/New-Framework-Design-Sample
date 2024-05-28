@@ -103,6 +103,7 @@ body {
 .UserImg {
   height: 50px;
   width: 50px;
+  cursor: pointer;
   border-radius: 100000px;
 }
 .User {
