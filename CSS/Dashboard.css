@@ -16,7 +16,7 @@ html{
 .searchBox{
     width: 65%;
     height: fit-content;
-    outline: 1px solid #035e88;
+    outline: 1px solid #c0c0c0;
     padding: 10px;
     border-radius: 10px;
     background-color: white;
@@ -26,7 +26,7 @@ html{
   width: max-content !important;
 }
 .customButton{
-    background: #013147 !important;
+  background:  #233b69 !important;
     /* box-shadow: rgba(1,49, 71, 0.30) 0px -23px 25px 0px inset, rgba(1,49, 71, 0.40)
      0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, 
      rgba(1,49, 71, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 
@@ -55,7 +55,7 @@ tbody tr:nth-child(odd) {
     background-color: #c3ecff;
   }
   table {
-    background: #013147 !important;
+    background:  #233b69;
    
         color: #fff !important;  
         table-layout: fixed;
@@ -73,7 +73,7 @@ tbody tr:nth-child(odd) {
 
 
   .Tasks{
-    border: #035e88 solid 1px;
+    outline: 1px solid #c0c0c0;
     width: fit-content;
     border-radius: 10px;
     width: 35%;

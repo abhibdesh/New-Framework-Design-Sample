@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,22 @@
     <link rel="stylesheet" href="./CSS/Card.css">
     <link rel="stylesheet" href="./CSS/Dashboard.css">
     <link rel="icon" type="image/png" href="./Assets/Navbar/VUE_LOGO.png" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./Scripts/Navbar.js"></script>
     <script src="./Scripts/SearchBox.js"></script>
     <script src="./Scripts/multiselect-dropdown.js"></script>
 </head>
+
 <body>
 
     <!-- SHOULD BE COPY PASTED ON ALL PAGES  -->
@@ -38,7 +46,8 @@
                 <li><a href="#">Tasks</a></li>
                 <li><a href="#">Class</a></li>
                 <li class="dropdownx">
-                    <a href="#" onclick="dropdownList()">Finance1 <i class="fa-solid fa-circle-chevron-down margina"></i> </a>
+                    <a href="#" onclick="dropdownList()">Finance1 <i
+                            class="fa-solid fa-circle-chevron-down margina"></i> </a>
                     <ul class="dropdown-menux">
                         <li><a href="#">Change File</a></li>
                         <li><a href="#">Change Rate Code</a></li>
@@ -49,7 +58,8 @@
                     </ul>
                 </li>
                 <li class="dropdownx">
-                    <a href="#" onclick="dropdownList()">Finance2 <i class="fa-solid fa-circle-chevron-down margina"></i></a>
+                    <a href="#" onclick="dropdownList()">Finance2 <i
+                            class="fa-solid fa-circle-chevron-down margina"></i></a>
                     <ul class="dropdown-menux">
                         <li><a href="#">Add Payment</a></li>
                         <li><a href="#">Add Fees</a></li>
@@ -65,7 +75,8 @@
                     </ul>
                 </li> -->
                 <li class="dropdownx">
-                    <a href="#" onclick="dropdownList()">Masters <i class="fa-solid fa-circle-chevron-down margina"></i> </a>
+                    <a href="#" onclick="dropdownList()">Masters <i class="fa-solid fa-circle-chevron-down margina"></i>
+                    </a>
                     <ul class="dropdown-menux">
                         <li><a href="#">Contractor</a></li>
                         <li><a href="#">Project</a></li>
@@ -75,7 +86,8 @@
                     </ul>
                 </li>
                 <li class="dropdownx">
-                    <a href="#" onclick="dropdownList()">Manage <i class="fa-solid fa-circle-chevron-down margina"></i> </a>
+                    <a href="#" onclick="dropdownList()">Manage <i class="fa-solid fa-circle-chevron-down margina"></i>
+                    </a>
                     <ul class="dropdown-menux">
                         <li><a href="#">Users</a></li>
                         <li><a href="#">Roles</a></li>
@@ -83,8 +95,8 @@
                         <li><a href="#">Password Policy</a></li>
                     </ul>
                 </li>
-            <li class="dropdownx" onclick="dropdownList()">
-                    <a href="#" >Admin<i class="fa-solid fa-circle-chevron-down margina"></i> </a>
+                <li class="dropdownx" onclick="dropdownList()">
+                    <a href="#">Admin<i class="fa-solid fa-circle-chevron-down margina"></i> </a>
                     <ul class="dropdown-menux">
                         <li><a href="#">Client Module</a></li>
                         <li><a href="#">Form Builder</a></li>
@@ -93,7 +105,7 @@
                     </ul>
                 </li>
             </ul>
-            <div class="User">            
+            <div class="User">
                 <img onclick="ToggleUser()" src="./Assets/Navbar/img_avatar2.png" class="UserImg">
                 </img>
             </div>
@@ -105,7 +117,7 @@
                     <li>Log Out</li>
                 </ul>
             </div>
-            
+
         </div>
     </nav>
     <!-- NAVBAR SECTION ENDS HERE  -->
@@ -114,27 +126,65 @@
     <div class="CardsSection">
         <div class="row">
             <div class="col">
-                <div class="cardx">
-                    <div class="CardData">75</div>
-                    <span class="CardLabel"><i class="margin fa-solid fa-chart-line"></i>Active Members</span>
+                <div class="cardx" style="background-color: #F7D9C4;">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                        <i class="margin fa-solid fa-chart-line"></i>
+                    </div>
+                    <div class="col-md-7 col-sm-7 col-lg-7">
+                        <div class="row">
+                            75
+                        </div>
+                        <div class="row">
+                            Active Members
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col">
-                <div class="cardx">
-                    <div class="CardData">98</div>
-                    <span class="CardLabel"><i class="margin fa-solid fa-skull"></i>Inactive Members</span>
+                <div class="cardx" style="background-color: #C9E4DE;">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                        <i class="margin fa-solid fa-skull"></i>
+                                        </div>
+                    <div class="col-md-7 col-sm-7 col-lg-7">
+                        <div class="row">
+                            98
+                        </div>
+                        <div class="row">
+                            Inactive Members
+                        </div>
+                    </div>
+                   
                 </div>
             </div>
             <div class="col">
-                <div class="cardx">
-                    <div class="CardData">$(-3007.8)</div>
-                    <span class="CardLabel"><i class="margin fa-solid fa-credit-card"></i>Total Credits</span>
+                <div class="cardx" style="background-color: #DBCDF0;">
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                        <i class="margin fa-solid fa-credit-card"></i>                                        </div>
+                    <div class="col-md-7 col-sm-7 col-lg-7">
+                        <div class="row">
+                            $190
+                        </div>
+                        <div class="row">
+                            Total Credits
+                        </div>
+                    </div>
+
+            
                 </div>
             </div>
             <div class="col">
-                <div class="cardx">
-                    <div class="CardData">$4950</div>
-                    <span class="CardLabel"><i class="margin fa-solid fa-hand-holding-dollar"></i>Total Balance</span>
+                <div class="cardx" style="background-color: #F2C6DE;">
+                    
+                    <div class="col-md-4 col-sm-4 col-lg-4">
+                        <i class="margin fa-solid fa-hand-holding-dollar"></i>                                                       </div>
+                    <div class="col-md-7 col-sm-7 col-lg-7">
+                        <div class="row">
+                            $4950
+                        </div>
+                        <div class="row">
+                            Total Balance
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -148,140 +198,142 @@
     <div class="containerx">
         <div class="contentx">
             <div class="row">
-                <div class="col-md-8 col-sm-1">            
+                <div class="col-md-8 col-sm-1">
                     <div class="searchBox">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-1"><b>Search Parameter</b></div>
-                        <div class="col-md-3 col-sm-1"><b>Filter</b></div>
-                        <div class="col-md-3 col-sm-1"><b> Search Value</b></div>
-                        <div class="col"></div>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-1"><b>Search Parameter</b></div>
+                            <div class="col-md-3 col-sm-1"><b>Filter</b></div>
+                            <div class="col-md-3 col-sm-1"><b> Search Value</b></div>
+                            <div class="col"></div>
+                        </div>
+                        <div class="row">&nbsp;</div>
+                        <div class="row" id="Row1">
+                            <div class="col-md-3 col-sm-1"><select class="form-control">
+                                    <option>First Name</option>
+                                    <option>Last Name</option>
+                                    <option>Status</option>
+                                </select></div>
+                            <div class="col-md-3 col-sm-1"><select class="form-control">
+                                    <option selected>Starts With</option>
+                                    <option>Contains</option>
+                                    <option>Is</option>
+                                    <option>Is Not</option>
+                                </select></div>
+                            <div class="col-md-3 col-sm-1">
+                                <input type="text" class="form-control search">
+                            </div>
+                            <div class="col">
+                            </div>
+                        </div>
+                        <div class="row">
+                            &nbsp;
+                        </div>
+                        <div class="row" id="Row2">
+                            <div class="col-md-3 col-sm-1"><select class="form-control">
+                                    <option>First Name</option>
+                                    <option selected>Last Name</option>
+                                    <option>Status</option>
+                                </select></div>
+                            <div class="col-md-3 col-sm-1"><select class="form-control">
+                                    <option>Starts With</option>
+                                    <option selected>Contains</option>
+                                    <option>Is</option>
+                                    <option>Is Not</option>
+                                </select></div>
+                            <div class="col-md-3 col-sm-1">
+                                <input type="text" class="form-control search">
+                            </div>
+                            <div class="col">
+                                <button class="btn customButton" onclick="RemoveFilter(2)"> Remove Filter</button>
+                            </div>
+                        </div>
+                        <div class="row">&nbsp;</div>
+                        <div class="row" id="Row3">
+                            <div class="col-md-3 col-sm-1"><select class="form-control">
+                                    <option>First Name</option>
+                                    <option>Last Name</option>
+                                    <option selected>Status</option>
+                                </select></div>
+                            <div class="col-md-3 col-sm-1"><select class="form-control">
+                                    <option>Starts With</option>
+                                    <option>Contains</option>
+                                    <option selected>Is</option>
+                                    <option>Is Not</option>
+                                </select></div>
+                            <div class="col-md-3 col-sm-1">
+                                <input type="text" class="form-control search">
+                            </div>
+                            <div class="col-md-3 col-sm-1">
+                                <button class="btn customButton" onclick="RemoveFilter(3)"> Remove Filter</button>
+                            </div>
+                        </div>
+
+                        <div class="row">&nbsp;</div>
+                        <div class="row">&nbsp;</div>
+
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <button class="btn customButton"> Save Filters</button>
+                            </div>
+                            <div class="col">
+                                <button class="btn customButton" onclick="ShowTable()"> Search</button>
+                                <button class="btn customButton" onclick="ShowNewRow()"> Add</button>
+                                <button class="btn btn-secondary" onclick="ClearInput()" style="width: 150px ;">
+                                    Clear</button>
+                            </div>
+                        </div>
+
+                        <div class="row">&nbsp;</div>
+                        <div class="row">&nbsp;</div>
+
+                        <div class="row" id="table">
+                            <div class="col">
+
+                                <table id="TableSample1" style="margin-top: 20px;" class="text-center">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">SSN</th>
+                                            <th scope="col">Phone</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr></tr>
+                                        <tr>
+                                            <td>John Doe</td>
+                                            <td>123-79-1231</td>
+                                            <td>(955) 099-5472</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jason Desson</td>
+                                            <td>723-74-1531</td>
+                                            <td>(985) 293-5472</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Stella Xavier</td>
+                                            <td>623-39-1439</td>
+                                            <td>(855) 099-5472</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Louisa Clark</td>
+                                            <td>723-79-4230</td>
+                                            <td>(595) 099-5491</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Juan Manuel</td>
+                                            <td>623-99-1202</td>
+                                            <td>(455) 139-5493</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
                     </div>
-                    <div class="row">&nbsp;</div>
-                    <div class="row" id="Row1">
-                        <div class="col-md-3 col-sm-1"><select class="form-control">
-                            <option>First Name</option>
-                            <option>Last Name</option>
-                            <option>Status</option>
-                        </select></div>
-                        <div class="col-md-3 col-sm-1"><select class="form-control">
-                            <option selected>Starts With</option>
-                            <option>Contains</option>
-                            <option >Is</option>
-                            <option >Is Not</option>
-                        </select></div>
-                        <div class="col-md-3 col-sm-1">
-                            <input type="text" class="form-control search">
-                        </div>
-                        <div class="col">
-                        </div>
-                    </div>
-                    <div class="row">
-                        &nbsp;
-                    </div>
-                    <div class="row" id="Row2">
-                        <div class="col-md-3 col-sm-1"><select class="form-control">
-                            <option>First Name</option>
-                            <option selected>Last Name</option>
-                            <option>Status</option>
-                        </select></div>
-                        <div class="col-md-3 col-sm-1"><select class="form-control">
-                            <option>Starts With</option>
-                            <option selected>Contains</option>
-                            <option>Is</option>
-                            <option >Is Not</option>
-                        </select></div>
-                        <div class="col-md-3 col-sm-1">
-                            <input type="text" class="form-control search">
-                        </div>
-                        <div class="col">
-                            <button class="btn customButton" onclick="RemoveFilter(2)"> Remove Filter</button>
-                        </div>
-                    </div>
-                    <div class="row">&nbsp;</div>
-                    <div class="row" id="Row3">
-                        <div class="col-md-3 col-sm-1"><select class="form-control">
-                            <option>First Name</option>
-                            <option >Last Name</option>
-                            <option selected>Status</option>
-                        </select></div>
-                        <div class="col-md-3 col-sm-1"><select class="form-control">
-                            <option>Starts With</option>
-                            <option >Contains</option>
-                            <option selected>Is</option>
-                            <option >Is Not</option>
-                        </select></div>
-                        <div class="col-md-3 col-sm-1">
-                            <input type="text" class="form-control search">
-                        </div>
-                        <div class="col-md-3 col-sm-1">
-                            <button class="btn customButton" onclick="RemoveFilter(3)"> Remove Filter</button>
-                        </div>
-                    </div>
-    
-                    <div class="row">&nbsp;</div>
-                    <div class="row">&nbsp;</div>
-    
-    
-                    <div class="row">
-                        <div class="col-md-4">
-                            <button class="btn customButton"> Save Filters</button>
-                        </div>
-                        <div class="col">
-                            <button class="btn customButton" onclick="ShowTable()"> Search</button>
-                            <button class="btn customButton" onclick="ShowNewRow()"> Add</button>
-                            <button class="btn btn-secondary" onclick="ClearInput()" style="width: 150px ;"> Clear</button>
-                        </div>
-                    </div>
-    
-                    <div class="row">&nbsp;</div>
-                    <div class="row">&nbsp;</div>
-    
-                    <div class="row" id="table">
-                        <div class="col">
-                           
-                            <table id="TableSample1" style="margin-top: 20px;" class="text-center">
-                                <thead>
-                                    <tr >
-                                        <th  scope="col">Name</th>
-                                        <th  scope="col">SSN</th>
-                                        <th  scope="col">Phone</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr></tr>
-                                    <tr>
-                                        <td>John Doe</td>
-                                        <td>123-79-1231</td>
-                                        <td>(955) 099-5472</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jason Desson</td>
-                                        <td>723-74-1531</td>
-                                        <td>(985) 293-5472</td>
-                                    </tr> 
-                                    <tr>
-                                        <td>Stella Xavier</td>
-                                        <td>623-39-1439</td>
-                                        <td>(855) 099-5472</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Louisa Clark</td>
-                                        <td>723-79-4230</td>
-                                        <td>(595) 099-5491</td>
-                                    </tr> 
-                                    <tr>
-                                        <td>Juan Manuel</td>
-                                        <td>623-99-1202</td>
-                                        <td>(455) 139-5493</td>
-                                    </tr>
-                                    
-                                </tbody> 
-                            </table>
-                        </div>
-                    </div>
-    
-    
-                </div></div>
+                </div>
                 <div class="col">
                     <div class="Tasks">
                         <b>Pending Tasks</b>
@@ -339,10 +391,10 @@
                 </div>
             </div>
 
-           
+
 
         </div>
-        
+
     </div>
 
 
@@ -356,4 +408,5 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./Scripts/Navbar.js"></script>
 </body>
+
 </html>

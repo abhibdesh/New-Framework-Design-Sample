@@ -7,7 +7,7 @@ body {
 
 /* Navbar styling */
 .navbarx {
-  background:  #013147;
+  background:  #233b69;
   color: #fff;
   padding: 10px 20px;
   height: 70px;
@@ -37,7 +37,6 @@ body {
   z-index: 10;
   margin: 0;
   padding: 0;
-  background:   #013147;
 
 }
 
@@ -62,7 +61,7 @@ body {
 .dropdown-menux {
   display: none;
   position: absolute;
-  background:   #013147 !important;
+  background:  #233b69;
   list-style: none;
   row-gap: 10px;
   padding: 5px;
@@ -117,7 +116,7 @@ body {
 .UserMenu {
   display: none;
   border: #013147 solid 1px;
-  background:   #013147;
+  background:  #233b69;
   color: #fff;
   right: 0;
   top: 63px;
