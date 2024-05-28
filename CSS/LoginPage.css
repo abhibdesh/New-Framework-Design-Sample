@@ -1,0 +1,56 @@
+ html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg,#035e88,#013147);
+
+}
+body{
+    border-radius: 10px;
+}
+.LoginCard{
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    border: #8d8e8f solid 1px;
+    box-shadow: 0 40px 108px rgba(0, 0, 0, 0.9);
+}
+.border{
+    border-radius: 10px;
+}
+.logo{
+    background: #035e88;
+    border-radius: 10000px;
+    height: 68px;
+    width: 166px;
+    margin: auto;
+  
+}
+.Input{
+margin-left: 120px;
+margin-right: 120px;
+display: flex;
+flex-direction: column;
+border-radius: 10px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.customButton{
+    background: #035e88;
+    color: aliceblue;
+}
+
+
+.customButton:hover{
+    background: #013147;
+color: aliceblue;
+}
+.imageclass{
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 3px;
+}
